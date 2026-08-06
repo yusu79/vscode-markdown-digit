@@ -1,0 +1,52 @@
+# テスト
+テスト/
+.vscode-test/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temp
+*.tmp
+*.temp
+.cache/
+tmp/
+temp/
+
+# Backup
+*.bak
+*.old
+*~
+
+# Secrets
+.env
+.env.*
+*.key
+*.pem
+*.p12
+secrets.yml
+config.local.*
+
+# Build
+dist/
+build/
+out/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node
+node_modules/
+*.tgz
+coverage/
+
+# IDE
+.idea/
+.vscode/*
+!.vscode/launch.json
