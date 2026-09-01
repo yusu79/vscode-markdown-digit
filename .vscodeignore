@@ -1,9 +1,16 @@
 .vscode/**
+.vscode-test
 .vscode-test/**
+.agent/**
+docs/**
 test/**
 .gitignore
+.gitmessage
+.npmignore
 .yarnrc
-vsc-extension-quickstart.md
+AGENTS.md
+CONTRIBUTING.md
+package-lock.json
 **/jsconfig.json
 **/*.map
 **/eslint.config.mjs

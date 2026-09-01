@@ -13,22 +13,23 @@
 * 内部実装上の軽微な判断は、既存コードや既存の設計方針に従って決定してよい
 * 作業中に依頼と無関係な問題を発見した場合は、勝手に修正せず報告する
 
-### Git
+## Git
 
-- 明示的に指示されない限り、以下は実行しない。
-  - `git commit`
-  - `git push`
-  - `git reset --hard`
-  - force push
-  - ブランチの削除
+明示的に指示されない限り、以下は実行しない。
 
-- 「コミットメッセージを作成して」と頼まれたら、変更差分と `.gitmessage` の内容を確認し、その形式に従って今回の変更内容を正確に反映したコミットメッセージを提出する
+* `git commit`
+* `git push`
+* `git reset --hard`
+* force push
+* ブランチの削除
 
-以下の確認用コマンドは必要に応じて使用してよい。
+確認のため、必要に応じて以下を使用してよい。
 
-- `git status`
-- `git diff`
-- `git log`
+* `git status`
+* `git diff`
+* `git log`
+
+コミットメッセージの作成を求められた場合は、変更差分と `.gitmessage` を確認し、その形式に従って今回の変更内容を正確に反映する。
 
 ## 参照するルール
 
@@ -36,16 +37,16 @@
 
 Codexの作業手順については `docs/agent-workflow.md` に従う。
 
-Out-of-Code Insights の annotation の確認・操作については `docs/out-of-code-insights.md` に従う。
-
 ## 作業開始時
 
 コードを変更する前に、以下を確認する。
 
-1. Out-of-Code Insights の未解決 annotation
+1. Out-of-Code Insights の未解決 annotationの確認
 2. 関係するファイル
 3. `package.json`
 4. 関連する既存実装とテスト
+
+変更対象に関連する annotation がある場合は、`manage-project-annotations` Skillを使用する。
 
 ## プロジェクト固有ルール
 
@@ -53,8 +54,16 @@ Out-of-Code Insights の annotation の確認・操作については `docs/out-
 * テストは原則として `test/` 以下に配置する
 * 既存APIとの互換性を維持する
 
-
-
 ## プロジェクト概要
 
-<!-- markdown-it-digit 固有の概要をここに記載する -->
+`vscode-markdown-digit` は、npmパッケージ `markdown-it-digit` を利用してMarkdown内の数値表記を変換し、その結果をVS CodeのMarkdownプレビューへ反映する拡張機能である。
+
+VS CodeのMarkdownプレビューで使用される `markdown-it` に `markdown-it-digit` をプラグインとして適用する。
+
+主な目標は以下とする。
+
+* npmパッケージ `markdown-it-digit` を依存関係として導入する
+* VS CodeのMarkdownプレビューで使用される `markdown-it` に `markdown-it-digit` を適用する
+* `markdown-it-digit` による変換結果がMarkdownプレビューへ正しく反映される状態にする
+
+Markdownエディタ自体の表示や入力内容を変更するのではなく、Markdownプレビューへの `markdown-it-digit` の統合を主な目的とする。

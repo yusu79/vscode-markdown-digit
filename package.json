@@ -2,21 +2,25 @@
   "private": true,
   "name": "vscode-markdown-digit",
   "displayName": "vscode-markdown-digit",
-  "description": "",
+  "description": "Format locale-marked integers in the VS Code Markdown preview.",
   "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yusu79/vscode-markdown-digit.git"
+  },
   "engines": {
     "vscode": "^1.125.0"
   },
   "categories": [
-    "Other"
+    "Formatters"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onLanguage:markdown"
+  ],
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "vscode-markdown-digit.helloWorld",
-      "title": "Hello World"
-    }]
+    "markdown.markdownItPlugins": true
   },
   "scripts": {
     "lint": "eslint .",
@@ -24,12 +28,15 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.125.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "22.x",
-    "eslint": "^9.39.3",
+    "@types/vscode": "^1.125.0",
     "@vscode/test-cli": "^0.0.12",
-    "@vscode/test-electron": "^2.5.2"
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.39.3",
+    "markdown-it": "^15.0.1"
+  },
+  "dependencies": {
+    "markdown-it-digit": "^1.0.0"
   }
 }
-
