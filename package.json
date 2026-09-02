@@ -1,7 +1,7 @@
 {
   "private": true,
-  "name": "vscode-markdown-digit",
-  "displayName": "vscode-markdown-digit",
+  "name": "markdown-digit",
+  "displayName": "Markdown Digit",
   "description": "Format locale-marked integers in the VS Code Markdown preview.",
   "version": "1.0.0",
   "publisher": "yusu79",

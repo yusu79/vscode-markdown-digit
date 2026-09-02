@@ -1,4 +1,4 @@
-# vscode-markdown-digit
+# Markdown Digit
 
 [English](README.md) | [日本語](README.jp.md)
 
