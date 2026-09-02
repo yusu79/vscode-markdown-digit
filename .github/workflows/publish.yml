@@ -37,18 +37,21 @@ jobs:
             exit 1
           fi
 
+      - name: Run tests
+        run: xvfb-run -a npm test
+
       - name: Package Extension
-        run: npx @vscode/vsce package
+        run: npx --no-install vsce package
 
       - name: Show VSIX File
         run: ls -la *.vsix
 
       - name: Publish to Visual Studio Marketplace
-        run: npx @vscode/vsce publish --packagePath *.vsix
+        run: npx --no-install vsce publish --packagePath *.vsix
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
 
       - name: Publish to Open VSX
-        run: npx ovsx publish *.vsix -p "$OVSX_PAT"
+        run: npx --no-install ovsx publish *.vsix -p "$OVSX_PAT"
         env:
           OVSX_PAT: ${{ secrets.OVSX_PAT }}
