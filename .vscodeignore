@@ -1,9 +1,12 @@
 .vscode/**
+.github/**
 .vscode-test
 .vscode-test/**
 .agent/**
+.agents/**
 docs/**
 test/**
+テスト/**
 .gitignore
 .gitmessage
 .npmignore

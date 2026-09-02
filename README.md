@@ -1,25 +1,32 @@
 # vscode-markdown-digit
 
+[English](README.md) | [日本語](README.jp.md)
+
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-1.125.0%2B-007ACC)
+![License](https://img.shields.io/github/license/yusu79/vscode-markdown-digit)
+
 Formats locale-marked integers in the Visual Studio Code Markdown preview using
 [`markdown-it-digit`](https://www.npmjs.com/package/markdown-it-digit).
 
 The extension changes only the rendered preview. It does not modify the Markdown
 source in the editor and does not provide commands or settings.
 
+## Installation
+
+Search for "Markdown Digit" in the Visual Studio Code Extensions view.
+
 ## Usage
 
-1. Install and enable the extension.
-2. Open a Markdown file.
-3. Open the Markdown preview.
-4. Write an integer using the following syntax:
+Open a Markdown file and write an integer using the following syntax:
 
-   ```text
-   $<number>${<locale>}
-   ```
+```md
+$<number>${<locale>}
+```
 
 For example:
 
-```text
+```md
 $1234567${en}
 ```
 

@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-09-02
+
+### Added
+
 - Integrate `markdown-it-digit` with the Visual Studio Code Markdown preview.
 - Support the `en`, `in`, `jp`, `cn`, `kr`, and `tw` locale markers.
 - Preserve ordinary numbers, invalid syntax, and unsupported locale markers.
