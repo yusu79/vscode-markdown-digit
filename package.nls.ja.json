@@ -1,7 +1,5 @@
 {
-  "extension.displayName": "Markdown Digit",
   "extension.description": "明示指定または文書全体のlocale設定を使用して、VS CodeのMarkdownプレビュー内の整数を整形します。",
-  "configuration.title": "Markdown Digit",
   "configuration.locale.description": "Markdownプレビュー内の通常の数字を自動変換する既定のlocaleです。YAML Front Matterの設定が優先されます。",
   "configuration.locale.disabled": "自動変換を無効にします。",
   "configuration.locale.en": "英語式の桁区切りです。",

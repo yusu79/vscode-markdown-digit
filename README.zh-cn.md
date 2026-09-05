@@ -1,4 +1,4 @@
-# Markdown Digit
+# Markdown Digit Formatter
 
 [English](README.md) | [日本語](README.jp.md) | [简体中文](README.zh-cn.md) | [한국어](README.ko.md) | [繁體中文](README.zh-tw.md)
 
@@ -12,7 +12,7 @@
 
 ## 安装
 
-在 Visual Studio Code 的扩展视图中搜索“Markdown Digit”。
+在 Visual Studio Code 的扩展视图中搜索“Markdown Digit Formatter”。
 
 ## 使用方法
 
@@ -30,7 +30,7 @@ $1234567${en}
 
 预览中会显示为 `1,234,567`，源文件保持不变。
 
-![Markdown Digit 数字格式示例](images/markdown-digit-example_cn.webp)
+![Markdown Digit Formatter 数字格式示例](images/markdown-digit-example_cn.webp)
 
 `<number>` 必须包含一个或多个 ASCII 数字（`0`～`9`）。开头的零会被保留，区域设置标识符区分大小写。
 
