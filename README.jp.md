@@ -1,8 +1,8 @@
 # Markdown Digit
 
-[English](README.md) | [日本語](README.jp.md)
+[English](README.md) | [日本語](README.jp.md) | [简体中文](README.zh-cn.md) | [한국어](README.ko.md) | [繁體中文](README.zh-tw.md)
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Version](https://img.shields.io/badge/version-1.1.0-blue)
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-1.125.0%2B-007ACC)
 ![License](https://img.shields.io/github/license/yusu79/vscode-markdown-digit)
 
@@ -30,6 +30,8 @@ $1234567${en}
 ```
 
 プレビューでは`1,234,567`と表示され、ソースは変更されません。
+
+![Markdown Digitによる数値フォーマット例](images/markdown-digit-example_jp.webp)
 
 `<number>`には1文字以上のASCII数字（`0`～`9`）を指定します。
 先頭のゼロは維持され、ロケール識別子では大文字と小文字が区別されます。

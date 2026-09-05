@@ -3,13 +3,13 @@
   "name": "markdown-digit",
   "displayName": "%extension.displayName%",
   "description": "%extension.description%",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "publisher": "yusu79",
   "icon": "images/icon.png",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yusu79/vscode-markdown-digit.git"
+    "url": "https://github.com/yusu79/vscode-markdown-digit.git"
   },
   "engines": {
     "vscode": "^1.125.0"

@@ -1,8 +1,8 @@
 # Markdown Digit
 
-[English](README.md) | [日本語](README.jp.md)
+[English](README.md) | [日本語](README.jp.md) | [简体中文](README.zh-cn.md) | [한국어](README.ko.md) | [繁體中文](README.zh-tw.md)
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Version](https://img.shields.io/badge/version-1.1.0-blue)
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-1.125.0%2B-007ACC)
 ![License](https://img.shields.io/github/license/yusu79/vscode-markdown-digit)
 
@@ -31,6 +31,8 @@ $1234567${en}
 ```
 
 The preview renders this as `1,234,567`, while the source remains unchanged.
+
+![Number formatting examples with Markdown Digit](images/markdown-digit-example_en.webp)
 
 `<number>` must contain one or more ASCII digits (`0`–`9`). Leading zeros are
 preserved, and locale identifiers are case-sensitive.
