@@ -1,8 +1,8 @@
 {
   "private": true,
   "name": "markdown-digit",
-  "displayName": "Markdown Digit",
-  "description": "Format locale-marked integers in the VS Code Markdown preview.",
+  "displayName": "%extension.displayName%",
+  "description": "%extension.description%",
   "version": "1.0.0",
   "publisher": "yusu79",
   "icon": "images/icon.png",
@@ -22,7 +22,41 @@
   ],
   "main": "./extension.js",
   "contributes": {
-    "markdown.markdownItPlugins": true
+    "markdown.markdownItPlugins": true,
+    "configuration": {
+      "title": "%configuration.title%",
+      "properties": {
+        "markdownDigit.locale": {
+          "type": "string",
+          "enum": [
+            "",
+            "en",
+            "in",
+            "jp",
+            "cn",
+            "kr",
+            "tw"
+          ],
+          "enumDescriptions": [
+            "%configuration.locale.disabled%",
+            "%configuration.locale.en%",
+            "%configuration.locale.in%",
+            "%configuration.locale.jp%",
+            "%configuration.locale.cn%",
+            "%configuration.locale.kr%",
+            "%configuration.locale.tw%"
+          ],
+          "default": "",
+          "description": "%configuration.locale.description%"
+        },
+        "markdownDigit.minDigits": {
+          "type": "integer",
+          "minimum": 1,
+          "default": 4,
+          "description": "%configuration.minDigits.description%"
+        }
+      }
+    }
   },
   "scripts": {
     "lint": "eslint .",
@@ -41,6 +75,7 @@
     "ovsx": "1.1.1"
   },
   "dependencies": {
-    "markdown-it-digit": "^1.0.0"
+    "js-yaml": "^4.3.2",
+    "markdown-it-digit": "^1.1.0"
   }
 }

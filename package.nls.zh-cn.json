@@ -1,0 +1,14 @@
+{
+  "extension.displayName": "Markdown Digit",
+  "extension.description": "使用显式设置或文档范围的区域设置，格式化 VS Code Markdown 预览中的整数。",
+  "configuration.title": "Markdown Digit",
+  "configuration.locale.description": "自动格式化 Markdown 预览中普通数字的默认区域设置。YAML Front Matter 中的设置优先。",
+  "configuration.locale.disabled": "禁用自动格式化。",
+  "configuration.locale.en": "英语数字分组。",
+  "configuration.locale.in": "印度数字分组。",
+  "configuration.locale.jp": "日语数字单位。",
+  "configuration.locale.cn": "简体中文数字单位。",
+  "configuration.locale.kr": "韩语数字单位。",
+  "configuration.locale.tw": "繁体中文数字单位。",
+  "configuration.minDigits.description": "启用自动格式化所需的最小数字位数。YAML Front Matter 中的设置优先。"
+}

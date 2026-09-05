@@ -1,0 +1,14 @@
+{
+  "extension.displayName": "Markdown Digit",
+  "extension.description": "Format integers in VS Code Markdown previews using explicit or document-wide locale settings.",
+  "configuration.title": "Markdown Digit",
+  "configuration.locale.description": "Default locale for automatically formatting ordinary numbers in Markdown previews. YAML Front Matter overrides this setting.",
+  "configuration.locale.disabled": "Disable automatic formatting.",
+  "configuration.locale.en": "English grouping.",
+  "configuration.locale.in": "Indian grouping.",
+  "configuration.locale.jp": "Japanese units.",
+  "configuration.locale.cn": "Simplified Chinese units.",
+  "configuration.locale.kr": "Korean units.",
+  "configuration.locale.tw": "Traditional Chinese units.",
+  "configuration.minDigits.description": "Minimum number of digits required for automatic formatting. YAML Front Matter overrides this setting."
+}
