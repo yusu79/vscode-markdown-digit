@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "vscode-markdown-digit",
-  "displayName": "%extension.displayName%",
+  "displayName": "Markdown Digit Formatter",
   "description": "%extension.description%",
   "version": "1.1.0",
   "publisher": "yusu79",
@@ -24,7 +24,7 @@
   "contributes": {
     "markdown.markdownItPlugins": true,
     "configuration": {
-      "title": "%configuration.title%",
+      "title": "Markdown Digit Formatter",
       "properties": {
         "markdownDigit.locale": {
           "type": "string",

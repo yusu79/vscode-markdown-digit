@@ -1,4 +1,4 @@
-# Markdown Digit
+# Markdown Digit Formatter
 
 [English](README.md) | [日本語](README.jp.md) | [简体中文](README.zh-cn.md) | [한국어](README.ko.md) | [繁體中文](README.zh-tw.md)
 
@@ -13,7 +13,7 @@
 エディター内のMarkdownソースは変更しません。
 
 ## インストール
-Visual Studio Code の拡張機能で「Markdown Digit」と入力してください｡
+Visual Studio Code の拡張機能で「Markdown Digit Formatter」と入力してください｡
 
 ## 使用方法
 
@@ -31,7 +31,7 @@ $1234567${en}
 
 プレビューでは`1,234,567`と表示され、ソースは変更されません。
 
-![Markdown Digitによる数値フォーマット例](images/markdown-digit-example_jp.webp)
+![Markdown Digit Formatterによる数値フォーマット例](images/markdown-digit-example_jp.webp)
 
 `<number>`には1文字以上のASCII数字（`0`～`9`）を指定します。
 先頭のゼロは維持され、ロケール識別子では大文字と小文字が区別されます。

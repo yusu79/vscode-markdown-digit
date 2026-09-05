@@ -1,7 +1,5 @@
 {
-  "extension.displayName": "Markdown Digit",
   "extension.description": "명시적 또는 문서 전체 로캘 설정을 사용하여 VS Code Markdown 미리 보기의 정수를 형식화합니다.",
-  "configuration.title": "Markdown Digit",
   "configuration.locale.description": "Markdown 미리 보기의 일반 숫자를 자동으로 형식화할 기본 로캘입니다. YAML Front Matter 설정이 우선합니다.",
   "configuration.locale.disabled": "자동 형식화를 사용하지 않습니다.",
   "configuration.locale.en": "영어식 자릿수 그룹입니다.",
