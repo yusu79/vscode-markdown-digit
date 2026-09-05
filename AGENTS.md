@@ -15,6 +15,10 @@
 
 ## Git
 
+- 通常の開発では `develop` をホームポジションとし、featureブランチでの作業を終えたら `develop` に戻る
+- 意図的にfeature、release、hotfixブランチで作業している場合を除き、HEADが `develop` を指していなければユーザーへ警告する
+- `main` は公開済みの安定版として扱い、公開版の確認、hotfixの作成、releaseブランチの受け入れなど必要な場合に使用する
+
 明示的に指示されない限り、以下は実行しない。
 
 * `git commit`

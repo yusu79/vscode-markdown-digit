@@ -27,8 +27,8 @@ npm install
 | `main`      | 公開可能な安定版         | -             | -                 |
 | `develop`   | 次回リリース向けの開発内容を統合 | `main`（初回作成時） | -                 |
 | `feature-*` | 新機能や個別の変更        | `develop`     | `develop`         |
-| `release-*` | リリース準備           | `develop`     | `main`, `develop` |
-| `hotfix-*`  | 公開中バージョンの緊急修正    | `main`        | `main`, `develop` |
+| `release-*` | リリース準備           | `develop`     | `main`            |
+| `hotfix-*`  | 公開中バージョンの緊急修正    | `main`        | `main`            |
 
 プロジェクトで異なるブランチ運用を採用する場合は、この表と以下の説明を変更してください。
 
@@ -81,7 +81,18 @@ release-1.0.0
 release-1.1.0
 ```
 
-リリース準備完了後は `main` と `develop` にマージします。
+リリース準備が完了したら、`release-*` を `main` にマージして公開するバージョンを確定し、`main` のリリースコミットへバージョンタグを付けます。
+
+`main` へのマージとタグ付けが完了したら、不要になった `release-*` ブランチを削除します。
+
+公開後は、`main` に確定したリリース内容を今後の開発へ引き継ぎます。`release-*` の作成後に `develop` が進んでいない場合は、`develop` を `main` へfast-forwardし、両ブランチが同じリリースコミットを指す状態に揃えます。
+
+```sh
+git switch develop
+git merge --ff-only main
+```
+
+`release-*` の作成後に次期バージョン向けの変更が `develop` へ追加されている場合は、`main` を `develop` にマージします。`develop` を `main` へマージすると次期バージョン向けの変更が公開版へ混入するため、マージの向きを逆にしません。
 
 ### `hotfix-*`
 
@@ -96,7 +107,18 @@ hotfix-example
 hotfix-1.0.1
 ```
 
-修正完了後は `main` と `develop` にマージします。
+修正が完了したら `hotfix-*` を `main` にマージし、`main` の修正版コミットへバージョンタグを付けてリリースします。
+
+`main` へのマージとタグ付けが完了したら、不要になった `hotfix-*` ブランチを削除します。
+
+リリース後、`develop` がhotfixの派生元から進んでいない場合は、`develop` を `main` へfast-forwardし、両ブランチが同じ修正版コミットを指す状態に揃えます。
+
+```sh
+git switch develop
+git merge --ff-only main
+```
+
+`develop` に次期バージョン向けの変更がある場合は、`main` を `develop` にマージし、修正を今後の開発へ反映します。この場合は、次期バージョン向けの変更が公開版へ混入しないように `develop` を `main` へマージしません。
 
 ## 実装
 
