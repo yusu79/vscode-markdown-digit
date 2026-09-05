@@ -11,6 +11,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Support document-wide automatic number formatting with the `markdownDigit.locale` and `markdownDigit.minDigits` VS Code settings.
 - Read per-document `markdown.digit` settings from YAML Front Matter, with YAML overriding VS Code settings.
 - Support explicit locale overrides and the `raw` marker from `markdown-it-digit` 1.1.0.
+- Localize the extension metadata and configuration descriptions in Japanese, Simplified Chinese, Korean, and Traditional Chinese, with English as the default.
 
 ### Changed
 
