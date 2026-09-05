@@ -6,6 +6,16 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+### Added
+
+- Support document-wide automatic number formatting with the `markdownDigit.locale` and `markdownDigit.minDigits` VS Code settings.
+- Read per-document `markdown.digit` settings from YAML Front Matter, with YAML overriding VS Code settings.
+- Support explicit locale overrides and the `raw` marker from `markdown-it-digit` 1.1.0.
+
+### Changed
+
+- Update `markdown-it-digit` from 1.0.0 to 1.1.0.
+
 ## [1.0.0] - 2026-09-02
 
 ### Added

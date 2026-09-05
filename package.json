@@ -22,7 +22,41 @@
   ],
   "main": "./extension.js",
   "contributes": {
-    "markdown.markdownItPlugins": true
+    "markdown.markdownItPlugins": true,
+    "configuration": {
+      "title": "Markdown Digit",
+      "properties": {
+        "markdownDigit.locale": {
+          "type": "string",
+          "enum": [
+            "",
+            "en",
+            "in",
+            "jp",
+            "cn",
+            "kr",
+            "tw"
+          ],
+          "enumDescriptions": [
+            "Disable automatic formatting.",
+            "English grouping.",
+            "Indian grouping.",
+            "Japanese units.",
+            "Simplified Chinese units.",
+            "Korean units.",
+            "Traditional Chinese units."
+          ],
+          "default": "",
+          "description": "Default locale for automatically formatting ordinary numbers in Markdown previews. YAML Front Matter overrides this setting."
+        },
+        "markdownDigit.minDigits": {
+          "type": "integer",
+          "minimum": 1,
+          "default": 4,
+          "description": "Minimum number of digits required for automatic formatting. YAML Front Matter overrides this setting."
+        }
+      }
+    }
   },
   "scripts": {
     "lint": "eslint .",
@@ -41,6 +75,7 @@
     "ovsx": "1.1.1"
   },
   "dependencies": {
-    "markdown-it-digit": "^1.0.0"
+    "js-yaml": "^4.3.2",
+    "markdown-it-digit": "^1.1.0"
   }
 }
